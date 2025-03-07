@@ -1,4 +1,5 @@
-# Taller4_AREP: MicroSpring Framework
+# Taller5_AREP: Taller de trabajo individual en patrones arquitecturales
+
 
 This project is a Spring Boot application that manages properties (address, price, size, description)
 using a MySQL database. The application exposes a REST API to perform CRUD (Create, Read, Update, Delete) operations on properties.
@@ -112,6 +113,14 @@ The structure and main components are described below:
 
 ### Answer
 - The Spring Boot server returns an HTTP (`JSON`) response to the client with the requested data.
+
+## Deployment
+
+![image](https://github.com/user-attachments/assets/37ed5778-b949-4e39-95ba-dc55c354dfac)
+
+
+https://github.com/user-attachments/assets/b54b8836-76d6-4464-a960-c2e6f5374f67
+
 
 ## Author
 
