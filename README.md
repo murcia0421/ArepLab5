@@ -65,6 +65,38 @@ The structure and main components are described below:
 
 # Components of the Architecture
 
+1. Security Configuration
+
+SecurityConfig.java: Configures authentication and authorization rules.
+
+JwtUtil.java: Manages token generation and validation.
+
+UserDetailsServiceImpl.java: Loads user details from the database.
+
+2. User Management
+
+UserController: Handles user registration and login.
+
+UserService: Business logic for user authentication and management.
+
+UserRepository: Database layer to store and retrieve user data.
+
+3. Secure API Endpoints
+
+Protected endpoints require valid JWT tokens.
+
+Users can only access resources based on their roles.
+
+Secure Data Flow
+
+Client (Frontend / Postman) sends a login request with credentials.
+
+Spring Boot Security Layer verifies the credentials and generates a JWT.
+
+The client includes the JWT in subsequent requests to access protected resources.
+
+The backend verifies the JWT, checks user roles, and processes the request securely.
+
 ## 1. EC2: Spring Boot (Backend App)
 
 ### PropertyController
